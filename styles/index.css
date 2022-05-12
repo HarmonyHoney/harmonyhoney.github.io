@@ -2,3 +2,15 @@
 {
 	background-color: #1e1e1e;
 }
+
+#vid{
+	border-radius: 50px;
+}
+
+#button{
+	padding: 2%;
+}
+
+#tainer{
+	max-width: 1080px;
+}
