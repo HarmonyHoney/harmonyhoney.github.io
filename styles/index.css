@@ -2,6 +2,9 @@
 
 #bod{
 	background-color: #1e1e1e;
+}
+
+#desc{
 	color: #fff;
 	text-align: center;
 	font-size: min(2.7vw, 22pt);
@@ -10,6 +13,8 @@
 #tainer{
 	max-width: 1080px;
 }
+
+/* Store Links */
 
 #button-back{
 	padding: 2%;
@@ -29,7 +34,28 @@
 	border-color: #fff;
 }
 
+/* Screenshots */
+
 #screenshot{
 	padding: 2%;
 	border-radius: min(3.5vw, 40px);
+}
+
+/* Navbar */
+.navbar{
+	background-color: #333;
+	padding: 0px;
+}
+
+.container-fluid{
+	padding: 0px;
+}
+
+#nav{
+	padding: 0px 5px 0px 5px;
+	font-size: 25pt;
+}
+
+#nav:hover{
+	background-color: #555;
 }
