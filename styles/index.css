@@ -1,3 +1,5 @@
+@import "../bootstrap-5.1.3-dist/node_modules/rfs/scss";
+
 #bod{
 	background-color: #1e1e1e;
 	color: #fff;
@@ -15,4 +17,16 @@
 
 #screenshot{
 	border-radius: 25px;
+}
+
+@media (max-width: 920px){
+	#bod{
+		font-size: 15pt;
+	}
+}
+
+@media (max-width: 520px){
+	#bod{
+		font-size: 12pt;
+	}
 }
