@@ -1,10 +1,8 @@
-#bod
-{
+#bod{
 	background-color: #1e1e1e;
-}
-
-#vid{
-	border-radius: 50px;
+	color: #fff;
+	text-align: center;
+	font-size: 20pt;
 }
 
 #button{
@@ -13,4 +11,8 @@
 
 #tainer{
 	max-width: 1080px;
+}
+
+#screenshot{
+	border-radius: 25px;
 }
