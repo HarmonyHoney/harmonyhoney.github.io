@@ -1,13 +1,19 @@
 @import "../bootstrap-5.1.3-dist/node_modules/rfs/scss";
 
-#bod{
-	background-color: #1e1e1e;
+body{
+	background-color: #333;
 }
 
 #desc{
 	color: #fff;
 	text-align: center;
 	font-size: min(2.7vw, 22pt);
+}
+
+#desc2{
+	color: #fff;
+	text-align: center;
+	font-size: min(3.5vw, 50pt);
 }
 
 #tainer{
@@ -25,7 +31,7 @@
 	background-image: linear-gradient(#595959, #000);
 	border-style: solid;
 	border-width: min(1vw, 15px);
-	border-color: #1e1e1e;
+	border-color: #333;
 	border-radius: min(4.2vw, 50px);
 }
 

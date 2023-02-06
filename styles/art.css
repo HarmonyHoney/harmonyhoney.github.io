@@ -1,89 +1,20 @@
-/* main.css */
-
-#bod
-{
-	background-color: #1e1e1e;
-}
-
-/* staatliches font */
-.staat
-{
-	font-family: 'Staatliches', cursive;
-	font-size: 22pt;
-}
-
-.navbar-brand
-{
-	font-size: 30pt;
-}
-
-.navbar
-{
+body{
 	background-color: #333;
 }
 
-#navimg
-{
-	width: 50px;
-	height: 50px;
-}
-
-#link
-{
-	font-size: 25pt;
-}
-
-@media (max-width: 1024px)
-{  
-	.navbar-brand
-	{
-		font-size: 20pt;
-	}
-
-	#navimg
-	{
-		width: 28px;
-		height: 28px;
-	}
-
-	#link
-	{
-		font-size: 18pt;
-	}
-}
-
-@media (max-width: 400px)
-{  
-	.navbar-brand
-	{
-		font-size: 20pt;
-	}
-
-	#navimg
-	{
-		width: 28px;
-		height: 28px;
-	}
-}
-
-
-
 /* Grid Container */
-.gridcontainer
-{
+.gridcontainer{
 	padding-top: 50px;
 }
 
 /* Container for each block in the Grid Container */
-.divblock
-{
+.divblock{
 	padding:100% 0 0 0;
 	position:relative;
 }
 
 /* Container for Media within divblock */
-.contentblock
-{
+.contentblock{
 	position:absolute;
 	top:0;
 	left:0;
@@ -94,7 +25,6 @@
 }
 
 /* Column within Grid Container Row */
-.col-lg
-{
+.col-lg{
 	padding: 1%;
 }

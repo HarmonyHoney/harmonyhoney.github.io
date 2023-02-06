@@ -1,0 +1,36 @@
+.navbar-brand{
+	font-size: 30pt;
+}
+
+.navbar{
+	background-color: #fff;
+    padding: 3pt 20pt;
+}
+
+.navbar a{
+    color: #000;
+}
+.navbar a:hover{
+	color: red;
+}
+
+.nav-link{
+	font-size: 25pt;
+    margin-left: 20px;
+}
+
+@media (max-width: 1024px){
+	.navbar-brand{
+		font-size: 20pt;
+	}
+
+	.nav-link{
+		font-size: 18pt;
+	}
+}
+
+@media (max-width: 400px){
+	.navbar-brand{
+		font-size: 20pt;
+	}
+}

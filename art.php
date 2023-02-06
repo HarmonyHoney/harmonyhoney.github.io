@@ -1,91 +1,15 @@
-<!doctype html>
-<html lang="en">
+<?php include 'php/head.php'; ?>
+<link rel="stylesheet" href="styles/art.css">
+<title>Art / Harmony Honey</title>
 
-<!-- Begin Head -->
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Avoid Caching -->
-  <meta http-equiv=“Pragma” content=”no-cache”>
-  <meta http-equiv=“Expires” content=”-1″>
-  <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
-
-  <!-- Webpage Title -->
-  <title>Harmony Honey - Game Developer & Artist</title>
-
-  <!-- Include Bootstrap CSS -->
-  <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
-  <!-- Include main.css -->
-  <link rel="stylesheet" href="styles/art.css">
-  <!-- Include font Staatliches -->
-  <link rel="stylesheet" href="styles/staatliches.css">
-
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/e141b1a58d.js" crossorigin="anonymous"></script>
-
-  <!-- Favicon -->
-  <link rel="icon" href="content/art/picon.svg" sizes="any" type="image/svg+xml">
-  
-</head>
-<!-- End Head-->
-
-<!-- Begin Body -->
-<body class="staat" id="bod">
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-md sticky-top navbar-dark">
-    <a class="navbar-brand" href="#">
-      <!--img src="content/picon.svg" id="navimg" class="d-inline-block my-auto" alt=""-->
-      Harmony Honey
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item active mx-auto">
-          <a class="nav-link" id="link" href="#">
-            <i class="fas fa-home"></i>
-            Home
-          </a>
-        </li>
-        <li class="nav-item mx-auto">
-          <a class="nav-link" id="link" href="https://harmony_hunnie.itch.io/" target="_none">
-            <i class="fab fa-itch-io"></i>
-            Games
-          </a>
-        </li>
-        <li class="nav-item mx-auto">
-          <a class="nav-link" id="link" href="https://twitter.com/harmony_hunnie" target="_none1">
-            <i class="fab fa-twitter"></i>
-            Twitter
-          </a>
-        </li>
-        <li class="nav-item mx-auto">
-          <a class="nav-link" id="link" href="https://www.youtube.com/@harmony_hunnie" target="_none2">
-            <i class="fab fa-youtube"></i>
-            YouTube
-          </a>
-        </li>
-        <li class="nav-item mx-auto">
-          <a class="nav-link" id="link" href="https://github.com/harmonyhoney" target="_none3">
-            <i class="fab fa-github"></i>
-            GitHub
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+<body>
+  <?php include 'php/navbar.php'; ?>
 
   <!-- Grid Container -->
   <main class="gridcontainer">
 
     <!-- Begin Inner Container -->
     <div class="container">
-
 
       <div class="row">
 
@@ -170,14 +94,7 @@
   </main>
   <!-- End Grid Container -->
 
-
-  <!-- Include jQuery and Popper JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  
-  <!-- Include Bootstrap JS -->
-  <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-
+  <?php include 'php/foot.php'; ?>
 </body>
 
 </html>

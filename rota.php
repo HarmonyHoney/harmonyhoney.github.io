@@ -1,33 +1,9 @@
-<!doctype html>
-<html lang="en">
+<?php include 'php/head.php'; ?>
+<link rel="stylesheet" href="styles/rota.css">
+<title>ROTA / Gravity Bending Puzzle Platforming Adventure! / Harmony Honey</title>
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Avoid Caching -->
-  <meta http-equiv=“Pragma” content=”no-cache”>
-  <meta http-equiv=“Expires” content=”-1″>
-  <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
-
-  <!-- Webpage Title -->
-  <title>ROTA - a gravity bending puzzle platforming adventure! by Harmony Honey</title>
-
-  <!-- Include Bootstrap CSS -->
-  <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
-  <!-- Include main.css -->
-  <link rel="stylesheet" href="styles/index.css">
-
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/e141b1a58d.js" crossorigin="anonymous"></script>
-
-  <!-- Favicon -->
-  <link rel="icon" href="content/rota/icon32.png" sizes="any" type="image/svg+xml">
-  
-</head>
-
-<body id="bod">
+<body>
+  <?php include 'php/navbar.php'; ?>
 
   <main>
 
@@ -76,7 +52,9 @@
 
       <div class="row" id="foot">
         <div clas="col">
-          <a href="https://twitter.com/harmony_hunnie"><i class="fab fa-twitter"></i> Twitter</a>
+          <a href="https://github.com/HarmonyHoney/ROTA">
+            <i class="fas fa-code"></i> View Source on GitHub <i class="fas fa-code-fork"></i>
+          </a>
         </div>
       </div>
 
@@ -86,13 +64,7 @@
 
   </main>
 
-  <!-- Include jQuery and Popper JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  
-  <!-- Include Bootstrap JS -->
-  <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-
+  <?php include 'php/foot.php'; ?>
 </body>
 
 </html>
