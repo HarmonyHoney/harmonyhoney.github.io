@@ -2,6 +2,8 @@
 
 body{
 	background-color: #333;
+	background-image: linear-gradient(#222, #444);
+    background-attachment: fixed;
 }
 
 #desc{
@@ -16,42 +18,41 @@ body{
 	font-size: min(3.5vw, 50pt);
 }
 
+#desc3{
+	color: #fff;
+	text-align: center;
+	font-size: min(2.5vw, 50pt);
+}
+
 #tainer{
 	max-width: 1080px;
 }
 
-/* Store Links */
-
-#button-back{
-	padding: 2%;
-}
-
-#button{
-	padding: 5%;
-	background-image: linear-gradient(#595959, #000);
+.button{
 	border-style: solid;
 	border-width: min(1vw, 15px);
-	border-color: #333;
 	border-radius: min(4.2vw, 50px);
+	border-color: transparent;
 }
 
-#button:hover{
-	background-image: linear-gradient(#000, #595959);
+.button:hover{
 	border-color: #fff;
 }
 
-/* Screenshots */
+.logo{
+	padding: 5%;
+	background-image: linear-gradient(#595959, #000);
+	border-color: #333;
+}
 
 #screenshot{
 	padding: 2%;
 	border-radius: min(3.5vw, 40px);
 }
 
-/* Footer */
-
-#foot{
+.foot{
 	color: #fff;
-	font-size: 20pt;
+	font-size: 40pt;
 	text-align: center;
 }
 
