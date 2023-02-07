@@ -6,25 +6,25 @@ body{
     background-attachment: fixed;
 }
 
-#desc{
+.desc{
 	color: #fff;
 	text-align: center;
 	font-size: min(2.7vw, 22pt);
 }
 
-#desc2{
+.desc2{
 	color: #fff;
 	text-align: center;
 	font-size: min(3.5vw, 50pt);
 }
 
-#desc3{
+.desc3{
 	color: #fff;
 	text-align: center;
 	font-size: min(2.5vw, 50pt);
 }
 
-#tainer{
+.tainer{
 	max-width: 1080px;
 }
 
@@ -62,5 +62,5 @@ a{
 }
 
 a:hover{
-	color: #ccc;
+	color: #fdd;
 }

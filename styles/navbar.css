@@ -1,10 +1,14 @@
+
+	
+
+
 .navbar-brand{
 	font-size: 30pt;
 }
 
 .navbar{
 	background-color: #fff;
-    padding: 3pt 20pt;
+    padding: 3pt 0pt;
 }
 
 .navbar a{
@@ -16,7 +20,8 @@
 
 .nav-link{
 	font-size: 25pt;
-    margin-left: 20px;
+	text-align: center;
+    margin: 0px 5px;
 }
 
 @media (max-width: 1024px){

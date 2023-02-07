@@ -2,11 +2,6 @@ body{
 	background-color: #333;
 }
 
-/* Grid Container */
-.gridcontainer{
-	padding-top: 50px;
-}
-
 /* Container for each block in the Grid Container */
 .divblock{
 	padding:100% 0 0 0;
