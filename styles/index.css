@@ -52,8 +52,8 @@ body{
 
 .foot{
 	color: #fff;
-	font-size: 40pt;
 	text-align: center;
+	font-size: clamp(1rem, 6vw, 4rem);
 }
 
 a{
@@ -63,4 +63,22 @@ a{
 
 a:hover{
 	color: #fdd;
+}
+
+.rota{
+	color: #fff;
+	text-align: center;
+	font-size: clamp(1.1rem, 4vw, 3rem);
+}
+
+.tinycrate{
+	color: #fff;
+	text-align: center;
+	font-size: clamp(0.95rem, 3vw, 2.5rem);
+}
+
+.title{
+	color: #fff;
+	text-align: center;
+	font-size: 5rem;
 }
