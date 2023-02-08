@@ -76,15 +76,24 @@
         key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&");
         var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
         return match && decodeURIComponent(match[1].replace(/\+/g, " "));
-    }
+    };
 
     var page = qs('page');
     
     if (page == undefined || page.length == 0) {
       page = "home"
-    }
+    };
 
     $('#open_content').load(page + '.html');
+
+    function bell(){
+        var audio = new Audio("content/sfx/bell.ogg");
+        audio.play();
+    };
+
+    function set_bell(){
+      $(".bell").click(function() {bell();} );
+    };
 
   </script>
 
