@@ -63,6 +63,10 @@ a:hover{
 	filter: invert();
 }
 
+.vid{
+	border-radius: min(4.2vw, 40px);
+}
+
 .foot{
 	color: #fff;
 	text-align: center;
@@ -84,5 +88,5 @@ a:hover{
 .title{
 	color: #fff;
 	text-align: center;
-	font-size: 5rem;
+	font-size: clamp(0.5rem, 12vw, 6rem);
 }

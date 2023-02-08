@@ -6,6 +6,7 @@
 .navbar a{
     color: #000;
 }
+
 .navbar a:hover{
 	color: red;
 }
