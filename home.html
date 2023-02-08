@@ -1,11 +1,26 @@
 <link rel="stylesheet" href="styles/home.css">
 
+<script>
+    function bell() {
+        var audio = new Audio("content/sfx/bell.ogg");
+        audio.play();
+    }
+</script>
+<script>
+     	
+
+    $(".bell").click(function() {
+     bell();
+    });
+
+</script>
+
 <main>
     
     <div class="tainer container">
 
-        <div class="row row-cols-1 gx-0 gy-0" style="margin: 40px 0px">
-            <a href="#" class="col mx-auto"> <img src="content/logo/Harmony-Honey-Logo.svg" class="img-fluid w-100"> </a>
+        <div class="row row-cols-1 gx-0 gy-0" style="margin: 40px 0px;">
+            <a href="#" class="col mx-auto button bell" style="padding: 15px 0px;"> <img src="content/logo/Harmony-Honey-Logo.svg" class="img-fluid w-100"> </a>
         </div>
 
         <div class="row row-cols-2 gx-5% gy-0" style="margin: 0 0 10px 0">
@@ -22,7 +37,7 @@
             <a href="https://harmonyhoney.itch.io/" class="col mx-auto" target="_none9"> <img src="content/logo/itch.svg" class="button logo img-fluid"> </a>
         </div>
 
-        <div class="row" style="margin: 20px 0">
+        <div class="row" style="margin: 20px 0 50px 0">
             <a href="https://github.com/HarmonyHoney/" target="_none10" class="foot button col"> <i class="fas fa-code"></i> Open Source on GitHub <i class="fas fa-code-fork"></i> </a>
         </div>
     </div>
