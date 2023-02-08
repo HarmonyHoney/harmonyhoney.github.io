@@ -44,6 +44,10 @@ a:hover{
 	padding: 5%;
 }
 
+.itch{
+	background-image: linear-gradient(#fa5c5c, #e33);
+}
+
 .button{
 	border-style: solid;
 	border-width: min(1vw, 15px);
