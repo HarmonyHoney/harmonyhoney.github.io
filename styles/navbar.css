@@ -1,6 +1,6 @@
 .navbar{
 	background-color: #fff;
-    padding: 3pt 0pt;
+    padding: 3pt 0;
 }
 
 .navbar a{
@@ -12,11 +12,26 @@
 
 .navbar-brand{
 	font-size: clamp(2rem, 3vw, 3rem);
+	margin-left: 1vw;
 }
 
 .nav-link{
-	text-align: center;
-    margin: 0px 0.5vw;
-
 	font-size: clamp(1rem, 2.5vw, 2.5rem);
+	text-align: center;
+	margin-right: 0.5vw;
+}
+
+@media (max-width: 767px){
+	.spacer{
+		display: none;
+	}
+	.nlink{
+		display: contents;
+	}
+}
+
+@media (min-width: 768px){
+	.nlink{
+		display: none;;
+	}
 }
