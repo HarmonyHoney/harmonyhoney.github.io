@@ -63,11 +63,6 @@ a:hover{
 	filter: invert();
 }
 
-#screenshot{
-	padding: 2%;
-	border-radius: min(3.5vw, 40px);
-}
-
 .foot{
 	color: #fff;
 	text-align: center;
