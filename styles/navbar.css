@@ -1,6 +1,7 @@
 .navbar{
 	background-color: #fff;
-    padding: 3pt 0;
+    padding: 0px 0;
+	margin: 0px 0px;
 }
 
 .navbar a{
@@ -20,6 +21,15 @@
 	font-size: clamp(1rem, 2.5vw, 2.5rem);
 	text-align: center;
 	margin-right: 0.5vw;
+}
+
+.nimage{
+	margin-top: 0px;
+	max-width: 200%;
+	height: clamp(28px, 5.3vw, 80px);
+}
+.nimage:hover{
+	filter: invert();
 }
 
 @media (max-width: 767px){
