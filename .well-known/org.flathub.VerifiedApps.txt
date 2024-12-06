@@ -1,0 +1,5 @@
+# Flathub Verification
+# See: https://docs.flathub.org/docs/for-app-authors/verification/
+
+# net.hhoney.rota
+bd87b874-742f-4568-8e94-dc6f1fe74ba7
