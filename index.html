@@ -2,14 +2,198 @@
 <html lang="en">
 
 <style>
+  
+  @import "../bootstrap-5.1.3-dist/node_modules/rfs/scss";
+
+
+  /* INDEX STYLE */
+  
   .pic{
       width: clamp(25px, 23vw, 250px);
       border-radius: 50%;
   }
+
+  /* ART STYLE */
+
+  /* Container for each block in the Grid Container */
+  .divblock{
+    padding:100% 0 0 0;
+    position:relative;
+  }
+
+  /* Container for Media within divblock */
+  .contentblock{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border-radius:2.5%;
+    background-color: #777;
+  }
+
+  /* Column within Grid Container Row */
+  .col-lg{
+    padding: 1%;
+  }
+
+
+  /* NAV STYLE */
+
+
+  .navbar{
+    background-color: #fff;
+    padding: 0px 0;
+    margin: 0px 0px;
+  }
+
+  .navbar a{
+    color: #000;
+  }
+
+  .navbar a:hover{
+    color: red;
+  }
+
+  .navbar-brand{
+    font-size: clamp(1.5rem, 3.5vw, 3rem);
+    margin-left: 1vw;
+  }
+
+  .nav-link{
+    font-size: clamp(1rem, 2.5vw, 2.5rem);
+    text-align: center;
+    margin-right: 0.5vw;
+  }
+
+  .nimage{
+    margin-top: 0px;
+    max-width: 200%;
+    height: clamp(28px, 5.3vw, 80px);
+  }
+  .nimage:hover{
+    filter: invert();
+  }
+
+  @media (max-width: 767px){
+    .spacer{
+      display: none;
+    }
+    .nlink{
+      display: contents;
+    }
+  }
+
+  @media (min-width: 768px){
+    .nlink{
+      display: contents;
+    }
+  }
+
+
+  /* INDEX STYLE */
+
+  body{
+    background-color: #333;
+    background-image: linear-gradient(#0062ff, #00eaff);
+      background-attachment: fixed;
+  }
+
+  a{
+    color: #fff;
+    text-decoration: solid;
+  }
+
+  a:hover{
+    color: #fff;
+  }
+
+
+  .desc{
+    color: #fff;
+    text-align: center;
+    font-size: min(2.7vw, 22pt);
+  }
+
+  .desc2{
+    color: #fff;
+    text-align: center;
+    font-size: min(3.5vw, 50pt);
+  }
+
+  .desc3{
+    color: #fff;
+    text-align: center;
+    font-size: min(2.5vw, 50pt);
+  }
+
+  .tainer{
+    max-width: 1080px;
+  }
+
+  .logo{
+    background-image: linear-gradient(#595959, #000);
+    background-clip: padding-box;
+    padding: 5%;
+  }
+
+  .itch{
+    background-image: linear-gradient(#fa5c5c, #e33);
+  }
+
+  .button{
+    border-style: solid;
+    border-width: min(1vw, 15px);
+    border-radius: min(4.2vw, 50px);
+    border-color: transparent;
+  }
+
+  .button:hover{
+    border-color: #fff;
+  }
+
+  .bell:active{
+    filter: invert();
+  }
+
+  .vid{
+    border-radius: min(4.2vw, 40px);
+  }
+
+  .foot{
+    color: #fff;
+    text-align: center;
+    font-size: clamp(0.5rem, 6vw, 4rem);
+  }
+
+  .rota{
+    color: #fff;
+    text-align: center;
+    font-size: clamp(0.5rem, 4vw, 3rem);
+  }
+
+  .tinycrate{
+    color: #fff;
+    text-align: center;
+    font-size: clamp(0.5rem, 3.2vw, 2.5rem);
+  }
+
+  .title{
+    color: #fff;
+    text-align: center;
+    font-size: clamp(0.5rem, 12vw, 6rem);
+  }
+
+
+
+
+
 </style>
 
+
+
 <head>
-  <title> HHoney Software / Games & Art by Harmony Honey</title>
+  <title> HHoney Software by Harmony Honey Monroe</title>
   <link rel="icon" href="content/art/icon.svg" sizes="any" type="image/svg+xml">
   <meta property="og:image" content="content/rota/itch.png">
 
@@ -24,8 +208,6 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles/navbar.css">
-  <link rel="stylesheet" href="styles/index.css">
 
   <!-- JS -->
   <script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
@@ -34,6 +216,8 @@
 </head>
 
 <body>
+  
+  <!-- NAVBAR -->
 
   <nav class="navbar navbar-expand-md sticky-top"> <div class="container-fluid">
     
@@ -44,18 +228,6 @@
       </button>
 
       <div class="navbar-collapse collapse" id="cnav"> <ul class="navbar-nav ms-auto">
-
-        <li class="nav-item">
-          <a class="nav-link" href="index.html?page=home"> <i class="fas fa-gamepad"></i> Games </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="index.html?page=art"> <i class="fas fa-paintbrush"></i> Art </a>
-        </li>
-        
-        <li class="nav-item spacer">
-          <a class="nav-link bell" href="#"> | </a>
-        </li>
 
         <li class="nav-item">
           <a class="nav-link bell" href="https://github.com/harmonyhoney" target="_blank"> <i class="fab fa-github"></i> <div class="nlink"> GitHub </div> </a>
@@ -77,8 +249,24 @@
 
   </div> </nav>
 
-  <div id="open_content"></div>
-  
+  <main>
+
+  <!-- GAMES -->
+  <div class="tainer container">
+
+    <div class="row row-cols-1 gx-0 gy-0" style="margin: 10px 0 0 0;">
+        <div class="col mx-auto button bell" style="padding: 1%"> <img src="content/logo/hhoney_slim.svg" class="img-fluid w-100"> </div>
+        <div class="title col mx-auto" style="margin: 0 0 20px 0"> <i class="fas fa-gamepad"></i> Games </div>
+    </div>
+
+    <div class="row row-cols-2 gx-5% gy-0" style="margin: 0 0 0 0">
+        <a href="https://hhoneysoftware.itch.io/rota" target="_blank" class="col mx-auto bell"> <img src="content/rota/itch.png" class="button img-fluid w-100"> </a>
+        <a href="https://hhoneysoftware.itch.io/tinycrate" target="_blank" class="col mx-auto bell"> <img src="content/tiny_crate/cover-4x.png" class="button img-fluid w-100"> </a>
+    </div>
+    
+  </div>
+
+  <!-- ABOUT and VIDEO -->
   <div id="footy" class="tainer container">
 
     <div class="tainer container">
@@ -116,27 +304,104 @@
         <a href="https://github.com/HarmonyHoney/" target="_blank" class="foot button col bell"> <i class="fas fa-code"></i> Open Source on GitHub <i class="fas fa-code-fork"></i> </a>
     </div>
 
-    <div class="row" style="margin: 0px 0 50px 0">
+    <div class="row" style="margin: 0px 0 0px 0">
         <a href="https://discord.gg/qGKzEykNyA" target="_blank" class="foot button col bell"> <i class="fa-solid fa-comment-dots"></i> Join our Discord <i class="fab fa-discord"></i> </a>
     </div>
   
   </div>
 
-  <script>
-    function qs(key) {
-        key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&");
-        var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
-        return match && decodeURIComponent(match[1].replace(/\+/g, " "));
-    };
 
-    var page = qs('page');
+  <div class="gridcontainer" style="margin: 0 0 0px 0;"> <div class="container"> <div class="row">
+
+    <div class="title col-md" style="margin: 50px 0;"> <i class="fas fa-paintbrush"></i> Art <i class="fa-solid fa-palette"></i> </div>
+  
+    <div class="w-100"></div>
+  
+    <!-- dive -->
+    <div class="col-lg">
+      <div class="divblock"><iframe src="https://player.vimeo.com/video/583042079?loop=1&color=ffffff&title=0&byline=0&portrait=0" class="contentblock" style="background-color:#ffa04d;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+  
+    <!-- ramp -->
+    <div class="col-lg">
+      <div class="divblock"><iframe src="https://player.vimeo.com/video/580178811?loop=1&color=ffffff&title=0&byline=0&portrait=0" class="contentblock" style="background-color:#008751;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+  
+    <div class="w-100"></div>
+  
+    <!-- pool -->
+    <div class="col-lg">
+      <div class="divblock"><iframe src="https://player.vimeo.com/video/580868018?loop=1&color=ffffff&title=0&byline=0&portrait=0" class="contentblock" style="background-color:#8B8AB2;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+  
+    <!-- lakeside campsite -->
+    <div class="col-lg">
+      <div class="divblock"><iframe src="https://player.vimeo.com/video/315805989?loop=1&color=ffffff&title=0&byline=0&portrait=0" class="contentblock" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+  
+    <div class="w-100"></div>
+  
+    <!-- biplane -->
+    <div class="col-lg">
+      <div class="divblock"><iframe src="https://player.vimeo.com/video/383337456?loop=1&color=ffffff&title=0&byline=0&portrait=0" class="contentblock" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+  
+    <!-- robo run -->
+    <div class="col-lg">
+      <div class="divblock"><iframe src="https://player.vimeo.com/video/316297086?loop=1&color=ffffff&title=0&byline=0&portrait=0" class="contentblock" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+  
+    <div class="w-100"></div>
+  
+    <!-- lil planet -->
+    <div class="col-lg">
+      <div class="divblock"><iframe src="https://player.vimeo.com/video/315954603?loop=1&color=ffffff&title=0&byline=0&portrait=0" class="contentblock" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
     
-    if (page == undefined || page.length == 0) {
-      page = "home"
-    };
+    <!-- ocean house -->
+    <div class="col-lg">
+      <div class="divblock"><iframe src="https://player.vimeo.com/video/315943826?loop=1&color=ffffff&title=0&byline=0&portrait=0" class="contentblock" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+    
+    <div class="w-100"></div>
+    
+    <!-- run n gun guy -->
+    <div class="col-lg">
+      <div class="divblock"><img src="content/art/runngun.svg" class="contentblock"/></div>
+    </div>
+    
+    <!-- hld fan art -->
+    <div class="col-lg">
+      <div class="divblock"><img src="content/art/hld-fanart-square.svg" class="contentblock"/></div>
+    </div>
+  
+    <!-- CRT-->
+    <div class="col-lg">
+      <div class="divblock"><iframe src="https://player.vimeo.com/video/383344608?loop=1&color=ffffff&title=0&byline=0&portrait=0" class="contentblock" style="background-color:#1a1a1a;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+  
+  </div> </div> <!-- End Inner Container --> </div>
 
-    $('#open_content').load(page + '.html');
 
+  <!-- TODO: INSERT LINKS HERE -->
+
+  <div class="row" style="margin: 30px 0">
+    <a href="https://github.com/HarmonyHoney/" target="_blank" class="foot button col bell"> <i class="fas fa-code"></i> Test Link <i class="fas fa-code-fork"></i> </a>
+  </div>
+
+  </main>
+
+  <!-- Include jQuery and Popper JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+  <!-- Include Bootstrap JS -->
+  <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+
+
+  
+  <!-- MY SCRIPTS -->
+  <script>
     function bell(){
         var audio = new Audio("content/sfx/bell.ogg");
         audio.play();
@@ -148,12 +413,9 @@
 
   </script>
 
-  <!-- Include jQuery and Popper JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
-  <!-- Include Bootstrap JS -->
-  <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+  <script>set_bell()</script>
+  
 </body>
 
 </html>
